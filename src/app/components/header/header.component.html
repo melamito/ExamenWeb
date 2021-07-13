@@ -1,1 +1,17 @@
-<p>header works!</p>
+<div class="titulo">
+    <h1>Mis Libros</h1>
+</div>
+
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink [routerLink]="['/libros']" routerLinkActive="router-link-active">Libros</a>
+    </li>
+    <li ngbNavItem>
+        <a ngbNavLink [routerLink]="['/quejas']" routerLinkActive="router-link-active">Quejas</a>
+    </li>
+</ul>
+
+
