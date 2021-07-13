@@ -1,0 +1,42 @@
+#libros{
+    list-style-type: none; 
+    margin-left: 5%;
+    width: 90%;
+    padding:0px;
+}
+
+.cuadricula{
+    border: 1px solid black;
+    width: 20%;
+    height: 100%;
+    padding:1.25%;
+    margin: 1.25%;
+    display: inline-block;
+    text-align: center;
+}
+
+.sec{
+    width: 100%;
+    height: 55px;
+    display:inline-table
+}
+
+.texto{
+    font-weight: bold;
+    font-size: 16px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.texto2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.imagen{
+    width: 100%;
+}
+

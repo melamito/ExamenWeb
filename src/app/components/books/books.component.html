@@ -1,1 +1,17 @@
-<p>books works!</p>
+<ul id=libros>  
+    <li *ngFor="let libro of Libros" class="cuadricula">
+        <div class="sec">
+            <p class="texto">{{libro.nombre}}</p>
+        </div>
+
+        <img src="{{libro.imagen}}" class=imagen>
+        
+        <div class="sec">
+            <p class="texto2">Autor: {{libro.autor}}</p>
+        </div>
+
+        <div class="sec">
+          <p class="texto2">Paginas: {{libro.paginas}}</p>
+        </div>
+    </li>
+</ul>

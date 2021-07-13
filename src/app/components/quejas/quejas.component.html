@@ -1,1 +1,34 @@
-<p>quejas works!</p>
+<div class="contenedor">   
+    <!--Este es el formulario de contacto-->
+    <form class="formulario" id="formulario" [formGroup]="formulario" (ngSubmit)="save($event)">
+        <!--Este es el titulo-->
+        <div class="form-group">
+            <h1 class="titulo">Quejas</h1>
+        </div>
+        <br>
+        <!--Nombres del cliente-->
+        <div class="form-group">
+            <label for="nombres">Nombres</label>
+            <input type="text" id="nombres" formControlName="nombres" placeholder="Juanito">
+        </div>
+    
+        <!--Aqui va el pais del cliente-->
+        <div class="form-group">
+            <label for="pais">Pais</label>
+            <select formControlName="pais">
+                <option selected>-- Seleccione Pais --</option>
+                <option *ngFor="let pais of Paises" [value]="pais.id">
+                    {{pais.nombre}}
+                </option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="obs">Observacion</label>
+            <textarea type="textarea" id="obs" formControlName="obs"></textarea>
+        </div>
+        <div class="form-group boton">
+            <button type="submit" [disabled]="formulario.invalid"> Enviar</button>
+        </div>
+    </form>
+</div> 

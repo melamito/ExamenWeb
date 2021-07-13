@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BooksComponent } from './components/books/books.component';
 import { QuejasComponent } from './components/quejas/quejas.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GraciasComponent } from './components/gracias/gracias.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     HomeComponent,
     BooksComponent,
-    QuejasComponent
+    QuejasComponent,
+    GraciasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
